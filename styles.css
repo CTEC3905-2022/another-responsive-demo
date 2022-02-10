@@ -14,6 +14,7 @@ h1, h2 {
 }
 h1 {
 	font-size: 3em;
+	text-shadow: 0 0 5px black
 }
 h2 {
 	font-size: 2.5em;
@@ -26,8 +27,11 @@ p {
 header {
 	overflow: auto;
 	padding-bottom: 1em;
-	background-color: hsl(60, 70%, 70%);
+	background-color: hsl(60, 70%, 50%);
 	color: white;
+	background-image: url(http://placekitten.com/600/400);
+	background-size: cover;
+	background-blend-mode: color-burn	;
 }
 
 header img {
@@ -37,12 +41,15 @@ header img {
 
 .html {
 	background-color: hsl(120, var(--saturation), var(--lightness));
+	background-image: url(http://placekitten.com/400/400);
 }
 .css {
 	background-color: hsl(0, var(--saturation), var(--lightness));
+	background-image: url(http://placekitten.com/500/500);
 }
 .js {
 	background-color: hsl(240, var(--saturation), var(--lightness));
+	background-image: url(http://placekitten.com/600/600);
 }
 
 p {
@@ -59,6 +66,8 @@ section {
 	grid-template-columns: 80px 1fr;
 	grid-template-rows: min-content 1fr;
 	grid-gap: 0.5em;
+	background-size: cover;
+	background-blend-mode: soft-light;
 }
 
 section img {
